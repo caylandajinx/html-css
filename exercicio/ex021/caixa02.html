@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groupng Tangs</title>
+    <link rel="shortcut icon" href="feio.ico" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            src: url('fonte/Roboto-VariableFont.ttf');
+        } 
+        
+        body {
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            
+            background-color: rgba(134, 76, 0, 0.952);
+        }
+
+        header {
+            background-color: white;
+
+            padding: 10px;
+            
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(173, 145, 67);
+            
+            padding: 2px;
+            
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.664);;
+        }
+
+        nav > a {
+            text-decoration: none;
+            
+            color: white;
+            
+            font-weight: bold;
+            
+            margin-right: 30px;
+        }
+        
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+        
+        main {
+            background-color: white;
+            
+            padding: 10px;
+            
+            margin: 10px;
+            
+            border-radius: 10px 1px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.815);
+        }
+
+        article {
+            background-color: rgb(231, 215, 185);
+            padding: 2px;
+        }
+        
+        article > aside {
+            background-color: rgb(219, 167, 77);
+        }
+        
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+        /*
+        div#bola {
+            height: 100px;
+            width: 100px;
+
+            margin: 10px;
+
+            background-color: white;
+
+            border-radius: 50%;
+        }
+        */
+    </style>
+</head>
+<body>
+    <header> <!-- Cabeçario -->
+          <h1>Meu site</h1>
+          <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+          </nav>
+    </header>
+    <main> <!-- Conteúdo principal -->
+        <section id="assuntos">
+            <h2>Assuntos</h2>
+            <p>Esporte Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+           <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui expedita dignissimos iure temporibus possimus illo sit ut quae excepturi maxime eligendi suscipit aliquam dicta totam magni vel optio, cum quia.</p>
+                <aside> <!-- Periferico ao artigo -->
+                    <p>Artigo escrito por Dino dos Santos</p>
+                </aside>
+           </article>
+           <article>
+                <h2>Preciso Viajar</h2>
+                <p>Me sinto tão sad</p>
+           </article>
+        </section>
+    </main>
+    <footer> <!-- Rodapé -->
+        <p>Desenvolvido pela Cay</p>
+    </footer>
+    <!--<div id="bola"> </div> -->
+</body>
+</html>

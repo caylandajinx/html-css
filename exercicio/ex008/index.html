@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="confuso.ico" type="image/x-icon">
+    <title>Formatação de Texto</title>
+    <style>
+        mark {
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa frase temos um <b>termo em negrito</b> usando a tag B (Não semântica).</p><!--Não tem significado-->
+    <p>Nesta frase, tenho um <strong>termo em destaque</strong> <mark>usando a tag STRONG</mark> (forte / semântica).</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, <i>temos um termo</i> em itâlico usando a tag I (Não semântica).</p>
+    <p>Nesta frase, temos um <em>termo em ênfase</em> <mark>usando a tag EM</mark> (Emphasis / semântica).</p>
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag MARK</p>
+    <p>E no outo parágrafo temos <mark>outro texto marcado</mark> no final.</p>
+    <h2>Texto grande e Pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste parágrafo</p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marca <del>um texto excluído</del> <mark>usando a tag DEL</mark> para indicar que ele deve ser lido, mas não considerado.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marca <ins>um texto como inserido</ins> <mark>usando a tag INS</mark> para dar ênfase e indicar que ele foi adicionado depois.(semântica)</p>
+    <p>Existe também o <u>sublinhado</u> com a tag U (Não semântica).</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3. <mark>Usando a tag SUP</mark></p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O. <mark>Usando a tag SUB</mark></p>
+    <h1>Trechos de código</h1>
+    <h1>Exemplo de Código em Python</h1>
+    <pre>
+        <code>
+            num = int(input("Digite um número: " ))
+            if num % 2 == 0:
+                print(f"O número {num} é par")
+            else:
+                print(f"O número {num} é ímpar")
+            print("FIM DO PROGRAMA")
+        </code>
+    </pre>
+    <p><mark>CODE</mark> linguagem de código de programação. <mark>PRE</mark> mantém o texto pré-formatado, exatamente da mesma maneira na qual ele foi digitado, incluindo quebras de linhas, espaços e tabulações.</p>
+    <h2>Tags Juntas</h2>
+    <p><strong><em>Em negrito e Itálico</em></strong></p>
+    <h2>"Citações"</h2>
+    <p>Uma citação é um trecho de texto, escrito ou dito por outra pessoa. <mark>Usando a tag Q </mark><q> e </q>.</p>
+    <p>Também podemos citar citações mais longas (em blocos) e que tenham um parágrafo só para si. Nesse caso, colocamos tudo dentro de <mark>BLOKQUOTE</mark>, o texto ganha um recuo automaticamente. Podemos colocar um link para o texto original, <mark>usando CITE dentro da tag</mark>.</p>
+    <blockquote>O PHP é uma linguagem para criação de scripts para a web do lado do servidor embutido em HTML, cujo código-font é aberto, e que é compatível com os mais importantes servidores web (especialmente Apache).</blockquote>
+    <h2>Abreviações</h2>
+    <p>Sempre que você quiser escrever uma sigla, mas deixar claro ao usuário (e aos mecanismo de busca) o significado dela, <mark>use a tag ABBR</mark>.</p>
+    <p>Eu estou estudando <abbr title="Hyper Text Markup language">HTML</abbr> para criar sites.</p>
+    <p>Note no código acima que utilizamos o título para indicar o significado da sigla. Quando passamos o mouse sobre a sigla abreviada, um pequeno texto aparece com o seu significado.</p>
+</body>
+</html>

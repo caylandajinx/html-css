@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <link rel="shortcut icon" href="feio.ico" type="image/x-icon">
+    <style>
+        div {
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: rebeccapurple;
+            
+        }
+
+        div >ol {
+            display: none
+        }
+
+        div:hover > ol {
+            display: block;
+            color: rebeccapurple;
+        }
+
+        div:hover {
+        /*
+            Quando passa o mouse, muda de cor, tipo de animação
+        */
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="01">01
+        
+        <p>Sentimentos... <br>
+        Me sinto estranha...
+        </p>
+    </div>
+    <div id="02">02
+        <p>Sozinha... <br>
+            Talvez, não mais...
+        </p>
+    </div>
+    <div id="03">03
+        <p>Confusa... <br>
+            Tão triste <br>que sinto que vou enloquecer...
+        </p>
+    </div>
+    <div id="04">04
+        <ol>
+            <li>Música</li>
+            <ul>
+                <li>Última Dança</li>
+                <li>OneShot</li>
+            </ul>
+        </ol>
+    </div>
+</body>
+</html>

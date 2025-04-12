@@ -1,0 +1,198 @@
+@charset "UFT-8";
+
+@font-face {
+    font-family: "Idroid";
+    src: url('pacote-projeto-d010/fontes/idroid.otf');
+}
+
+/*
+    rgb(94, 175, 247)
+    #003840, #005A5B, #008C72)
+*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: aquamarine;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #003840, #005A5B, #008C72);
+    color: white;
+    padding-top: 40px;
+    box-shadow: 1px 1px 4px 0px;
+    margin: 0px;
+    min-height: 100%;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px;
+    margin: auto;
+    max-width: 600px;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 2px black;
+}
+
+nav {
+    padding-bottom: 20px;
+}
+
+nav > p {
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 0px 4px black;
+    padding: 0px 10px;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+nav > a{
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+
+#introducao a:active {
+    color: yellow;
+}
+
+#introducao a:hover {
+    margin: 0px;
+    background-color: rgba(95, 158, 160, 0.808);
+    padding: 10px;
+}
+
+#historia h1 {
+    font-family: 'Idroid', sans-serif;
+    font-style: normal;
+    font-size: 2em;
+    padding: 10px;
+    color: rgb(2, 71, 2);
+}
+
+main strong {
+    color: rgb(4, 53, 4);
+    font-weight: bold;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    max-width: 1000px;
+    min-width: 300px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px px 10px;
+}
+
+main a {
+    color: rgb(4, 131, 36);
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #4abdbe6e;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+
+main a:hover {
+    text-decoration: underline;
+    color: rgba(22, 196, 202, 0.808);
+}
+
+.imagen-centro {
+    text-align: center;
+
+}
+
+main h2 {
+    font-family: 'Idroid', sans-serif;
+    padding: 10px;
+    color: rgb(2, 71, 2);
+    background-image: linear-gradient(to right, rgb(115, 153, 155), white);
+    text-indent: 8px;
+    font-size: 1.5;
+    font-weight: normal;
+}
+
+main p {
+    padding: 10px;
+    margin: 5px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+}
+
+h3 {
+    background-image: linear-gradient(to right, rgb(115, 153, 155), white);
+    color: white;
+    padding: 10px;
+    margin: 0px;
+}
+
+aside {
+    background-color: rgb(181, 214, 214);
+    padding: 10px;
+    margin: 0px;
+    border-radius: 0px 0px 40px 40px;
+}
+
+footer {
+    background-color: #003740c2;
+    padding: 4px;
+    margin: 0px;
+    color: black;
+}
+
+footer > p {
+    margin: 0px;
+    text-align: center;
+}
+
+div.lista ul {
+    list-style: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+}
+
+a.especial::after {
+    content: "\00A0\1F517";
+}
+main img {
+    width: 100%;
+}
+
+main img.pequeno {
+    max-width: 450px;
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    background-color: #005A5B;
+    position:relative;
+    height:0px;
+    margin-left:-20;
+    margin-right:-20px;
+    margin-bottom:15px;
+    padding-bottom:59%;
+}
+
+div.video > iframe {
+    position:absolute;
+    top:5%;
+    left:5%;
+    width:90%;
+    height:90%;   
+}
