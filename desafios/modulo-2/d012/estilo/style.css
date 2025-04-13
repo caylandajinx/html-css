@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1em;
+}
+
+body {
+    background-color: darkgray;
+    min-height: 100vh;
+}
+
+header {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+header h1 {
+    font-size: 3em;
+    padding: 50px;
+}
+header p {
+    font-size: 1em;
+    padding-bottom: 50px;
+}
+
+section p {
+    margin: 30px;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 2em
+}
+
+.normal {
+    color: black;
+}
+
+#img1 {
+    background-image: url("../imagens/background001.jpg");
+    color: white;
+
+}
+
+#img2 {
+    background-image: url("../imagens/background002.jpg");
+    color: white;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+}
