@@ -1,14 +1,25 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte-1:Verdana, 
+    Geneva, Tahoma, sans-serif;
+    --fonte-2:'passion One', sans-serif;
+    --fonte-3:'Sriracha', 'cursive';
+}
+
 * {
     padding: 0px;
     margin: 0px;
-    font-size: 1em;
 }
 
-body {
-    background-color: darkgray;
+html, body {
+    background-color: white;
     min-height: 100vh;
+    font-family: var(--fonte-1);
 }
 
 header {
@@ -16,35 +27,69 @@ header {
     background-color: black;
     text-align: center;
 }
+
 header h1 {
-    font-size: 3em;
-    padding: 50px;
+    font-size: 10em;
+    padding-top: 50px;
+    font-family: var(--fonte-2);
+    font-variant: small-caps;
 }
-header p {
-    font-size: 1em;
+
+header > p {
     padding-bottom: 50px;
 }
 
-section p {
-    margin: 30px;
-    text-align: justify;
+header a, footer a {
+    text-decoration: none;
+    color: white;
     font-weight: bold;
-    font-size: 2em
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+section {
+    padding-top: 10vh;
+    padding-left: 30px;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    font-size: 3.5em;
+    font-family: var(--fonte-3);
+    font-style: normal;
+}
+
+section p {
+    padding: 10px;
 }
 
 .normal {
     color: black;
+    padding: 10x;
+}
+
+section.imagem {
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    background-color: rgba(77, 78, 77, 0.212);
+    box-shadow: inset 1px 1px 14px 1px black;
+}
+
+section.imagem p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.301);
+    padding: 5px;
 }
 
 #img1 {
     background-image: url("../imagens/background001.jpg");
-    color: white;
-
+    background-position: right center;
 }
 
 #img2 {
     background-image: url("../imagens/background002.jpg");
-    color: white;
 }
 
 footer {
