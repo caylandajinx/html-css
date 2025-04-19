@@ -24,59 +24,76 @@
             padding: 10px;
             border: 1px solid black;
         }
+
+        .cor {
+            background-color: rgb(247, 208, 215);
+        }
+
+        .color {
+            background-color: rgb(152, 238, 152);
+        }
+
+        .cores {
+            background-color: aquamarine;
+        }
+
+        .titulo {
+            background-color: green;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <h1>Desafios de Tabelas</h1>
     <table>
-        <caption>Filmes Favoritos</caption>
+        <caption class="titulo">Filmes Favoritos</caption>
         <thead>
-            <tr>
+            <tr class="cores">
                 <th scope="col">Grupo</th>
                 <th scope="col">Nomes</th>
                 <th scope="colgroup" colspan="3">Filmes</th>
             </tr>
         </thead>
         <tfoot>
-            <tr>
+            <tr class="cores">
                 <th colspan="4" scope="row">Total</th>
                 <td><strong>1000</strong></td>
             </tr>
         </tfoot>
         <tbody>
-            <tr>
+            <tr class="cor">
                 <th scope="rowgroup" rowspan="3">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
                 <td>Vingadores</td>
             </tr>
-            <tr>
+            <tr class="cor">
                 <td>Beatriz Souza</td>
                 <td>Hulk</td>
                 <td>Inception</td>
                 <td>Batman</td>
             </tr>
-            <tr>
+            <tr class="cor">
                 <td>Cláudia Melo</td>
                 <td>Oblivion</td>
                 <td>Matrix</td>
                 <td>Big Hero</td>
             </tr>
-            <tr>
+            <tr class="color">
                 <th scope="rowgroup" rowspan="3">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
                 <td>Gradiador</td>
             </tr>
-            <tr>
+            <tr class="color">
                 <td>Daniel Lourenço</td>
                 <td>Wall-E</td>
                 <td>OldBoy</td>
                 <td>Dangal</td>
             </tr>
-            <tr>
+            <tr class="color">
                 <td>Fabiano Mota</td>
                 <td>Star Wars 5</td>
                 <td>Taxi Driver</td>
