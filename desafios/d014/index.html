@@ -3,9 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .cor {
+            background-color: rgba(112, 112, 112, 0.932);
+            color: white;
+        }
+
+        .esquerdo {
+            text-align: left;
+        }
+
+        .centro {
+            text-align: center;
+        }
+
+        .forte {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    
+    <table>
+        <thead>
+            <tr class="cor" >
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Disciplinas</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Média</th>
+            </tr>
+            <tr class="cor">
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="colgroup" rowspan="4">Exatas</th>
+                <td>Matemática</td>
+                <td class="centro">5.5</td>
+                <td class="centro">8.5</td>
+                <td class="centro">7.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td class="centro">9</td>
+                <td class="centro">7.6</td>
+                <td class="centro">8.3</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td class="centro">10</td>
+                <td class="centro">10</td>
+                <td class="centro">10</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="centro">9</td>
+                <td class="centro">10</td>
+                <td class="centro">9.5</td>
+            </tr>
+            <tr class="cor">
+                <th scope="row" colspan="4" class="esquerdo">Média de Exatas</th>
+                <td class="centro forte">8.7</td>
+            </tr>
+            <tr>
+                <th scope="colgroup" rowspan="2">Humanas</th>
+                <td>História</td>
+                <td class="centro">8</td>
+                <td class="centro">10</td>
+                <td class="centro">9</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="centro">5</td>
+                <td class="centro">7</td>
+                <td class="centro">6</td>
+            </tr>
+            <tr class="cor">
+                <th scope="row" colspan="4" class="esquerdo">Média de Humanas</th>
+                <td class="centro forte">7.5</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
