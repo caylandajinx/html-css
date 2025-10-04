@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            background-color: #e0cac3;
+        }
+        mark {
+            background-color: #eeb17c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="1">
+        <li>Acordar</li>
+        <li>ligar para suzie</li>
+        <li>Escova os dentes</li>
+        <li>Tomar café</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o Trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <p>Uma lista ordenada, utiliza a tag &lt;ol&gt; que delimita a lista &lt;li&gt; que identifica cada item. (a tag &lt;li&gt; tem o fechamento opcional)</p>
+    <p>A tag &lt;ol&gt; possui um parâmetro type=<q> </q> onde pode mudar o marcado da lista atual. As opções dos parâmetro são: <br> &#10513; 1 = ex:1, 2, 3, 4, ... <br>&#10513; A = ex:A, B, C, D, ... <br>&#10513; a = ex:a, b, c, d, ...<br>&#10513; I = ex:I, II, III, IV, ... <br>&#10513; i = ex:i, ii, iii, iv, ...</p>
+    <p>Também pode indicar o início da contagem usando o parâmetro <q>start</q>. <br> Por exemplo, a tag &lt;<mark>ol type=<q>I</q>start = <q>5</q></mark>&gt; vai gerar itens numerados como V, VI,...</p>
+    <h2>Lista não Ordenadas</h2>
+    <ul type="circle"> <!-- disc, circle e square -->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Manteiga</li>
+        <li>Alface</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Tomate</li>
+    </ul>
+    <p>Para criar uma <strong><em>unordered list</em></strong>, também chamadas de listas com marcadores. Utilizando a tag &lt;ul&gt; junto com &lt;li&gt; para criar os itens.</p>
+    <p>Podemos configurar a propriedade type da tag &lt;<mark>ul type=<q>circle</q></mark>&gt;  com os seguites valores: <br>&#10513; disc = padrão. Uma bolinha totalmente preechida <br> &#10513; circle = Uma bola com borda preta e sem preenchido <br> &#10513; square = Um pequeno quadrado totalmente preenchido</p>
+    <h2>Listas mistas</h2>
+    <p>Podemos configurar listas dentro de outras listas. Além de juntar listas <mark>&lt;ul&gt; com &lt;ol&gt;</mark> e vice-versa. As listas internas sempre terão deslocamento interno para a direita.</p>
+    <h3>Linguagens de Programação</h3>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a">
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Hortlin</li>
+        </ol>
+    </ol>
+    <h2>Lista de Jogos</h2>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario Bros 3</li>
+                <li>Mario Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+            <ul type="circle">
+                <li>Ninja Gaiden III</li>
+            </ul>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Super Mario World</li>
+            <li>Donkey Kong</li>
+            <ul type="circle">
+                <li>Donkey Kong County III</li>
+                <li>Diddy's Kong Quest</li>
+            </ul>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <ul type="circle">
+                <li>Final Fantasi VII</li>
+                <li>Final Fantasi IX</li>
+            </ul>
+            <li>Castlevania</li>
+            <ul type="circle">
+                <li>Simphony of the Night</li>
+            </ul>
+        </ul>
+    </ol>
+    <h2>Lista de Definições</h2>
+    <p>É como um dicionário, temos os termos e suas descrições.</p>
+    <p>As listas de definições tem a tag &lt;dl&gt; <br> Os termos tem a tag &lt;dt&gt; <br> As descrições tem a tag &lt;dd&gt;.</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação utilizada para criar conteúdo de sites.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a especificação de estilos em sites.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criar interatividades em sites.</dd>
+    </dl>
+</body>
+</html>
