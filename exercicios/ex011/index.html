@@ -8,6 +8,7 @@
     <style>
         body {
             background-color: #cff1f1c0;
+            font-family: Arial, Helvetica, sans-serif;
         }
     </style>
 </head>
@@ -21,6 +22,16 @@
         <img src="imagens/foto-g.png" alt="Imagem flexível">
     </picture>
 
+    <p>Inserimos a tag &lt;img&gt; dentro da tag &lt;picture&gt;, que vai concentrar as outras fontes de imagem. Por padão, a imagem de 1000px será carregada</p>
+    <p>Acima da tag &lt;img&gt; utilizamos a tag &lt;source&gt; com os atributos:
+        <ol>
+            <li><strong>type</strong> vai indicar o media type da imagem que usamos</li>
+            <li><strong>srcset</strong> vai configurar o nome da imagem que será carregada quando o tamanho indicado for atingido</li>
+            <li><strong>media</strong> indica o tamanho máximo a ser considerado para carregar a imagem indicada no atributo srcset</li>
+        </ol>
+    </p>
+    <p>É importante que exista uma ordem entre os &lt;source&gt;, sendo os itens mais acima sejam os menores tamanhos para max-width e que os seguintes sejam maiores, de forma crescente. O último item dentro de &lt;picture&gt; deve ser a imagem padrão. </p>
+
     <h1>Reproduzindo Áudio</h1>
     <p>Vamos aprender a reproduzir áudios em HTML5.</p>
     <audio preload="auto" controls autoplay>
@@ -29,7 +40,14 @@
         <source src="midia/take-me-back-neffex.wav" type="audio/wav">
         <p>Infelizmente seu navegador não consegue reproduzir áudio</p>
     </audio>
-    <p>Podcast do guanabara</p>
+
+    <h2>Formato/type</h2>
+    <ul>
+        <li>MP3: mpeg</li>
+        <li>ogg: ogg</li>
+        <li>wav: wav</li>
+    </ul>
+
     <audio preload="metadata" controls autoplay>
         <source src="midia/guanacast-33.mp3" type="audio/mpeg">
         <source src="midia/guanacast-33.ogg" type="audio/ogg">
@@ -37,5 +55,17 @@
         <p>Infelizmente seu navegador não consegue reproduzir áudio</p>
     </audio>
     <!-- MP3 WAV OGG -->
+    <p>Dentro da tag &lt;audio&gt; com os atributos preload controls e autoplay, abaixo colocamos &lt;source&gt; com o atributo src=<q> </q> junto com o type="audio/coloca o tipo"</p>
+    <ul>
+        <li>O atributo <strong>preload</strong> indica se o áudio será pré-carregado ou não e aceita três valores:</li>
+        <ul type="circle">
+            <li><strong>metadata</strong> vai carregar apenas as informações sobre o arquivo (tamanho, tempo, informações de direitos, etc) </li>
+            <li><strong>none</strong> não vai carregar absolutamente nada até que o usuário clique no botão play ou um script inicie a reprodução</li>
+            <li><strong>auto</strong> (padrão) vai carregar o arquivo de áudio inteiro assim que a página for carregada, mesmo que o usuário nunca aperte o play</li>
+        </ul>
+        <li> O atributo<strong> controls </strong>vai apresentar o player na tela. Caso não seja colocado na tag &lt;audio&gt;, o controle será transparente e o usuário não poderá interagir com ele. </li>
+        <li> O atributo <strong>autoplay</strong>, quando inserido, vai iniciar a reprodução do áudio assim que a página for carregada. </li>
+        <li>O atributo<strong> loop</strong> vai fazer com que o áudio seja repetido eternamente assim que terminar a sua reprodução.</li>
+    </ul>
 </body>
 </html>
