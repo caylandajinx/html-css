@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        div {
+            display: inline-block; /*exibi uma div ao lado da outra, em linha*/
+            text-align: center;
+            background-color: darksalmon;
+            width: 200px; /*largura do bloco*/
+            height: 200px; /*altura do bloco*/
+            border: 1px solid black; /*borda do bloco*/
+        }
+
+        div:hover {
+            background-color: turquoise;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="d1">01 <p>Older That You Get</p></div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>
