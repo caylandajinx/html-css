@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalização dos fundos</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            background-color: lightpink;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1, h2, p {
+            text-align: center;
+        }
+        
+        div {
+            margin: auto;
+            background-color: lightgreen;
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 500px;
+            width: 400px;
+            background-size: 100px 100px;
+        }
+
+        div#q1 {
+            background-repeat: repeat;
+            background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+        }
+
+        div#q2 {
+            background-repeat: repeat-x;
+            background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+        }
+
+        div#q3 {
+            background-repeat: repeat-y;
+            background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+        }
+
+        div#q4 {
+            background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1>Repetição em background-image</h1>
+
+    <h2>background-repeat: repeat;</h2>
+    <p>Repete a imagem tanto no sentido vertical e no horizontal (padrão)</p>
+    <div id="q1">
+
+    </div>
+
+    <h2>background-repeat: repeat-x;</h2>
+    <p>Repete apenas no eixo horizontal.</p>
+    <div id="q2"></div>
+
+    <h2>background-repeat: repeat-y;</h2>
+    <p>Repete apenas no eixo vertical.</p>
+    <div id="q3"></div>
+
+    <h2>background-repeat: no-repeat;</h2>
+    <p>Não repete em nenhum eixo. A imagem só repete uma vez.</p>
+    <div id="q4"></div>
+</body>
+</html>
