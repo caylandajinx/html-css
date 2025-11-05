@@ -11,18 +11,24 @@
             height: 100vh;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 1em;
-            background-color: sandybrown;
+            /*background-color: sandybrown;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
-            background-attachment: fixed;
+            background-attachment: fixed; */
+
+            /* Shorthand - background
+                color > image > position > repeat > /[size] > attachment
+            */
+            
+            background: sandybrown url('imagens/wallpaper002.jpg') center center /cover no-repeat fixed;
         }
 
         main {
             background-color: white;
             padding: 10px;
-            width: 400px;
+            max-width: 400px;
             margin: auto;
             border: 1px solid darkblue;
             border-radius: 15px;
