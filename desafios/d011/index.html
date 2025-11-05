@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Desafio do Astronauta</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <style>
+        htm, body {
+            background-color: blue;
+            margin: 0px;
+            padding: 0px;
+        }
+        /*color > image > position > repeat > /[size] > attachment*/
+        #espaco {
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+
+            background: url('imagens/espaco.jpg') center center no-repeat fixed;
+            background-size: cover;
+        }
+
+        #astronauta {
+            position: absolute;
+            background: url('imagens/astronauta.png') center center no-repeat fixed;
+            background-size: cover;
+            
+            height: 400px;
+            width: 400px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    </style>
 </head>
 <body>
-    
+    <section id="espaco">
+        <article id="astronauta">
+
+        </article>
+    </section>
 </body>
 </html>
